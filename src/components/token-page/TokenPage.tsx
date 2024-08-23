@@ -271,18 +271,7 @@ export function Token(props: Props) {
     </Flex>
   );
 };
-import { prepareEvent } from "thirdweb";
-import { useContractEvents } from "thirdweb/react";
-    
 
-  const onClick = () => {
-    const transaction = prepareContractCall({ 
-      contract, 
-      method: "function buyFromListing(uint256 _listingId, address _buyFor, uint256 _quantity, address _currency, uint256 _expectedTotalPrice) payable", 
-      params: [_listingId, _buyFor, _quantity, _currency, _expectedTotalPrice] 
-    });
-    sendTransaction(transaction);
-  };
 function getExpiration(endTimeInSeconds: bigint) {
   // Get the current date and time
   const currentDate = new Date();
