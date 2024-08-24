@@ -22,9 +22,10 @@ export const NFT_CONTRACTS: NftContract[] = [
   {
     address: "0x789825ddaA3C41ef2876B6F152996681B6242253",
     chain: vitruveo,
-    title: "The National Fentanyl Awareness Day Charity 2024",
-    thumbnailUrl:
-    "",
     type: "ERC721",
+    title: "The National Fentanyl Awareness Day Charity 2024",
+    description: "",
+    thumbnailUrl:"",
+    slug?:"",
   },
 ];

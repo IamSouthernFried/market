@@ -8,8 +8,10 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({
+  parent,
   children,
 }: Readonly<{
+  parent: RecordingState.ReactNode;
   children: React.ReactNode;
 }>) {
   return (
@@ -17,6 +19,7 @@ export default function RootLayout({
       <body style={{ paddingBottom: "100px" }}>
         <Providers>
           <Navbar />
+          {parent}
           {children}
         </Providers>
       </body>
